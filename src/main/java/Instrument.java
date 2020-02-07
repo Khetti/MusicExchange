@@ -3,15 +3,13 @@ public abstract class Instrument {
     private String brand;
     private String model;
     private String colour;
-    private double buyPrice;
-    private double sellPrice;
 
-    public Instrument(String brand, String model, String colour, double buyPrice, double sellPrice) {
+
+    public Instrument(String brand, String model, String colour) {
         this.brand = brand;
         this.model = model;
         this.colour = colour;
-        this.buyPrice = buyPrice;
-        this.sellPrice = sellPrice;
+
     }
 
     public String getBrand() {
@@ -26,15 +24,4 @@ public abstract class Instrument {
         return this.colour;
     }
 
-    public double getBuyPrice() {
-        return this.buyPrice;
-    }
-
-    public double getSellPrice() {
-        return this.sellPrice;
-    }
-
-    public void setSellPrice(int newSellPrice) {
-        this.sellPrice = newSellPrice;
-    }
 }

@@ -27,4 +27,19 @@ public class DrumKitTest {
         assertEquals("Ba dum tss", drumKit.play());
     }
 
+    @Test
+    public void canGetBuyPrice() {
+        assertEquals(650, drumKit.getBuyPrice(), 0.00);
+    }
+
+    @Test
+    public void canGetSellPrice() {
+        assertEquals(859, drumKit.getSellPrice(), 0.00);
+    }
+
+    @Test
+    public void canSetSellPrice() {
+        drumKit.setSellPrice(809);
+        assertEquals(809, drumKit.getSellPrice(), 0.00);
+    }
 }
