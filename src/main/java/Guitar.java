@@ -1,4 +1,4 @@
-public class Guitar {
+public class Guitar extends Instrument {
 
 
 
