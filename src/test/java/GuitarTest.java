@@ -12,6 +12,7 @@ public class GuitarTest {
         guitar = new Guitar("PRS", "Custom 24", "Sapphire", 550, 799, 6, "85/15 S");
     }
 
+    // Tests for superclass(Instrument) instance methods
     @Test
     public void canGetBrand() {
         assertEquals("PRS", guitar.getBrand());
@@ -38,6 +39,13 @@ public class GuitarTest {
     }
 
     @Test
+    public void canSetSellPrice() {
+        guitar.setSellPrice(749);
+        assertEquals(749, guitar.getSellPrice(), 0.00);
+    }
+
+    // Tests for instance methods
+    @Test
     public void canGetNoOfStrings() {
         assertEquals(6, guitar.getNoOfStrings());
     }
@@ -45,6 +53,11 @@ public class GuitarTest {
     @Test
     public void canGetPickups() {
         assertEquals("85/15 S", guitar.getPickups());
+    }
+
+    @Test
+    public void canPlay() {
+        assertEquals("Meedly meedly meedly", guitar.play());
     }
 
 }

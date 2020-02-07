@@ -33,4 +33,8 @@ public abstract class Instrument {
     public double getSellPrice() {
         return this.sellPrice;
     }
+
+    public void setSellPrice(int newSellPrice) {
+        this.sellPrice = newSellPrice;
+    }
 }
