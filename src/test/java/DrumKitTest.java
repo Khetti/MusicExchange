@@ -13,6 +13,16 @@ public class DrumKitTest {
     }
 
     @Test
+    public void canGetNoOfPieces() {
+        assertEquals(5, drumKit.getNoOfPieces());
+    }
+
+    @Test
+    public void canGetCymbalBrand() {
+        assertEquals("Zildjian", drumKit.getCymbalBrand());
+    }
+
+    @Test
     public void canPlay() {
         assertEquals("Ba dum tss", drumKit.play());
     }

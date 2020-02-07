@@ -12,4 +12,12 @@ public class DrumKit extends Instrument implements IPlay {
     public String play() {
         return "Ba dum tss";
     }
+
+    public int getNoOfPieces() {
+        return this.noOfPieces;
+    }
+
+    public String getCymbalBrand() {
+        return this.cymbalBrand;
+    }
 }
